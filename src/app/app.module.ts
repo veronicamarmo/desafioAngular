@@ -7,6 +7,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { HomeComponent } from './home/home.component';
 import { FilmesComponent } from './filmes/filmes.component';
 import { GeneroComponent } from './genero/genero.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { GeneroComponent } from './genero/genero.component';
     UsuarioComponent,
     HomeComponent,
     FilmesComponent,
-    GeneroComponent
+    GeneroComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

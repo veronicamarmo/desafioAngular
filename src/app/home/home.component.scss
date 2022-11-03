@@ -12,8 +12,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    width: 1440px;
     height: 200px;
     margin: auto;
 }
@@ -108,11 +106,8 @@ h1 {
 }
 
 .text1 {
-
-    width: 1249px;
     height: 112px;
     margin: auto;
-    margin-top: -45px;
 
     text-align: justify;
 
@@ -126,11 +121,10 @@ h1 {
 }
 
 h2 {
-    width: 1024px;
-    height: 112px;
-    margin: auto;
+    height: 45px;
     margin-top: 75px;
-    margin-left: 270px;
+    text-align: center;
+
 
     font-family: 'Roboto';
     font-style: normal;
@@ -179,7 +173,6 @@ h2 {
 
 .footer {
     display: flex;
-    width: 1440px;
     height: 250px;
     margin: auto;
     margin-top: 230px;

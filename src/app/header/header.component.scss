@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rosarivo&display=swap');
+
+header {
+    background-color: #9BD2DE;
+    width: 100%;
+}
+
+.flexfooter,
+.flexheader1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+img {
+    width: 61px;
+    height: 61px;
+}
+
+.links {
+    align-items: center;
+}
+
+a {
+    margin-left: 45px;
+    text-decoration: none;
+    width: 49px;
+    height: 21px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B2142;
+}
+
+.textfilmesheader {
+    width: 102px;
+    height: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #616162;
+}
+
+
+.textfilmesheader,
+.textcolletionheader {
+    margin-left: 10px;
+}
+
+
+.textcolletionheader {
+
+    width: 88px;
+    height: 25px;
+
+    font-family: 'Rosarivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #686666;
+
+    margin-top: -35px;
+}
+
+.textfilmescoletaneaheader {
+    width: 291px;
+    height: 29px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #000000;
+
+    margin-top: 15px;
+}
+
+p {
+    width: 600px;
+}
