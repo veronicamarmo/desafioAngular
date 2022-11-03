@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rosarivo&display=swap');
+
+.flexfooter,
+.flexheader1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.header {
+    background-color: #9BD2DE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 1440px;
+    height: 200px;
+    margin: auto;
+}
+
+img {
+    width: 61px;
+    height: 61px;
+}
+
+.links {
+    align-items: center;
+}
+
+a {
+    margin-left: 45px;
+    text-decoration: none;
+    width: 49px;
+    height: 21px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B2142;
+}
+
+.textfilmesheader {
+    width: 102px;
+    height: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #616162;
+}
+
+
+.textfilmesheader,
+.textcolletionheader {
+    margin-left: 10px;
+}
+
+
+.textcolletionheader {
+
+    width: 88px;
+    height: 25px;
+
+    font-family: 'Rosarivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #686666;
+
+    margin-top: -35px;
+}
+
+.textfilmescadastroheader {
+    width: 597px;
+    height: 29px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #000000;
+
+}
+
+.footer {
+    display: flex;
+    width: 1440px;
+    height: 250px;
+    margin: auto;
+    margin-top: 230px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: #F6511D;
+}
+
+.rodape {
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFCFC;
+}
+
+
+#linha-vertical {
+    display: flex;
+    height: 175px;
+    border-right: 2px solid white;
+}
+
+
+.textfilmesfooter {
+    width: 102px;
+    height: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+
+.textfilmesfooter,
+.textcolletionfooter {
+    margin-left: 10px;
+}
+
+
+.textcolletionfooter {
+
+    width: 88px;
+    height: 25px;
+
+    font-family: 'Rosarivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #000000;
+
+    margin-top: -35px;
+}
+
+main {
+    margin: auto;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.generos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.editar {
+    width: 125px;
+    height: 35px;
+
+
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    border-radius: 20px;
+    color: white;
+}
+
+.excluir {
+    width: 125px;
+    height: 35px;
+
+
+    background: #41B8D2;
+    border: 2px solid #41B8D2;
+    border-radius: 20px;
+    color: #000000;
+}
+
+
+input {
+    width: 400px;
+    height: 58px;
+
+
+    border: 1px solid #000000;
+}
+
+.cadastrar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.salvar {
+    width: 180px;
+    height: 58px;
+
+    background: #F6511D;
+    color: white;
+}
