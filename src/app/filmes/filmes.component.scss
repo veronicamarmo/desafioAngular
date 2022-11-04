@@ -120,12 +120,27 @@ a {
 .cadastrados2,
 .cadastrados3 {
     display: flex;
-    justify-content: space-evenly;
-    text-align: start;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #4B2142;
 }
 
+.acao {
+    margin-right: 210px;
+}
 
+.comedia {
+    margin-right: 125px;
+}
 
+.terror {
+    margin-right: 132px;
+}
 
 
 .footer {

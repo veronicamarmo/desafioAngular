@@ -169,7 +169,14 @@ main {
 
 .generos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #4B2142;
 }
 
 .editar {
@@ -203,11 +210,6 @@ input {
     border: 1px solid #000000;
 }
 
-.cadastrar {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .salvar {
     width: 180px;
     height: 58px;
@@ -228,6 +230,11 @@ h1 {
     line-height: 28px;
 
     color: #000000;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
 }
 
 .cadastrar {
