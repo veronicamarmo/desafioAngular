@@ -8,56 +8,35 @@
         </div>
     </div>
 
+    <form [formGroup]="form" (ngNativeValidate)="salvarDadosGenero()">
 
-    <p class="cadastrar">Cadastrar Genêro</p>
-    <div class="inputs">
-        <input type="text" placeholder="Genêro">
-        <button type="submit" class="salvar">Salvar</button>
-    </div>
+        <p class="cadastrar">Cadastrar Genêro</p>
+        <div class="inputs">
+            <input type="text" formControlName="genero" placeholder="Genêro">
 
-
-    <div class="genero">
-
-
-        <div class="generos">
-
-            <div class="genero1">
-                <p>Terror</p>
-            </div>
-
-            <div class="botoes">
-
-                <button class="editar">Editar</button>
-                <button class="excluir">Excluir</button>
-            </div>
+            <button type="submit" class="salvar" (click)="salvarDadosGenero()" *ngIf="!verificarEditar">Salvar</button>
+            <button type="submit" class="salvar" (click)="EditarCliente1()" *ngIf="verificarEditar">Editar</button>
         </div>
 
-        <div class="generos">
 
-            <div class="genero2">
-                <p>Ação</p>
+        <div class="genero" *ngFor="let item of genero; index as i;">
+
+
+            <div class="generos">
+
+                <div class="genero1">
+                    <p>{{item.genero}}</p>
+                </div>
+
+                <div class="botoes">
+                    <button class="editar" (click)="EditarCliente2(item)">Editar</button>
+                    <button class="excluir" (click)="deleteDadosGenero(item.id)">Excluir</button>
+                </div>
             </div>
 
-            <div class="botoes">
-
-                <button class="editar">Editar</button>
-                <button class="excluir">Excluir</button>
-            </div>
         </div>
+    </form>
 
-        <div class="generos">
-
-            <div class="genero3">
-                <p>Comédia</p>
-            </div>
-
-            <div class="botoes">
-
-                <button class="editar">Editar</button>
-                <button class="excluir">Excluir</button>
-            </div>
-        </div>
-    </div>
 
 
 </main>

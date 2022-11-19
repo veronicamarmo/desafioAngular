@@ -9,71 +9,52 @@
         </div>
     </div>
 
-    <p class="cadastrar">Cadastrar Filmes</p>
-    <div class="inputs">
-        <input type="text" placeholder="Título do Filme">
-        <select id="setor" name="setor">
-            <option value="Genero" selected>Genêro</option>
-        </select>
-        <button type="submit" class="salvar">Salvar</button>
-    </div>
+    <form [formGroup]="form" (ngNativeValidate)="salvarDadosFilmes()">
 
-
-
-
-    <div class="generos">
-
-        <div class="cadastrados">
-
-            <div class="filme1">
-                <p>Os outros</p>
-            </div>
-
-            <div class="genero1">
-                <p class="terror">Terror</p>
-            </div>
-
-            <div class="botoes">
-
-                <button class="editar">Editar</button>
-                <button class="excluir">Excluir</button>
-            </div>
+        <p class="cadastrar">Cadastrar Filmes</p>
+        <div class="inputs">
+            <input type="text" formControlName="filmes" placeholder="Título do Filme">
+            <select id="setor" formControlName="genero" name="setor">
+                <option value="Genero" selected>Genêro</option>
+                <option value="Ação">Ação</option>
+                <option value="Drama">Drama</option>
+                <option value="Romance">Romance</option>
+                <option value="Documentario">Documentario</option>
+                <option value="Terror">Terror</option>
+                <option value="Comédia">Comédia</option>
+                <option value="Suspense">Suspense</option>
+            </select>
+            <button type="submit" class="salvar" (click)="salvarDadosFilmes()" *ngIf="!verificarEditar">Salvar</button>
+            <button type="submit" class="salvar" (click)="EditarCliente1()" *ngIf="verificarEditar">Editar</button>
         </div>
 
-        <div class="cadastrados2">
 
-            <div class="filme2">
-                <p>Até o último homem</p>
+
+
+
+        <div class="generos" *ngFor="let item of filmes; index as i;">
+
+
+            <div class="cadastrados">
+
+                <div class="filme1">
+                    <p>{{item.filmes}}</p>
+                </div>
+
+                <div class="genero1">
+                    <p class="terror">{{item.genero}}</p>
+                </div>
+
+                <div class="botoes">
+
+                    <button class="editar" (click)="EditarCliente2(item)">Editar</button>
+                    <button class="excluir" (click)="deleteDadosFilmes(item.id)">Excluir</button>
+                </div>
             </div>
 
-            <div class="genero2">
-                <p class="acao">Ação</p>
-            </div>
-
-            <div class="botoes">
-
-                <button class="editar">Editar</button>
-                <button class="excluir">Excluir</button>
-            </div>
         </div>
 
-        <div class="cadastrados3">
-
-            <div class="filme3">
-                <p>O máscara</p>
-            </div>
-
-            <div class="genero3">
-                <p class="comedia">Comédia</p>
-            </div>
-
-            <div class="botoes">
-
-                <button class="editar">Editar</button>
-                <button class="excluir">Excluir</button>
-            </div>
-        </div>
-    </div>
+    </form>
 
 </main>
 <app-footer></app-footer>

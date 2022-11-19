@@ -1,0 +1,23 @@
+{
+  "usuarios": [
+    {
+      "id": 2,
+      "nome": "veronica",
+      "email": "amarmo.42@gmail.com",
+      "telefone": "12992164106"
+    }
+  ],
+  "filmes": [
+    {
+      "id": 2,
+      "filmes": "As Branquelas",
+      "genero": "Documentario"
+    }
+  ],
+  "generos": [
+    {
+      "id": 2,
+      "genero": "Veronica Linda"
+    }
+  ]
+}

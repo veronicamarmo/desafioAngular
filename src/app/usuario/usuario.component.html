@@ -2,104 +2,54 @@
 <main>
 
 
-    <h1>Cadastro</h1>
-    <div class="cadastroflex">
+    <form [formGroup]="form" (ngNativeValidate)="salvarDadosUsuarios()">
 
-        <div class="nome">
-            <p id="nome">Nome</p>
-            <input type="text">
+
+        <h1>Cadastro</h1>
+        <div class="cadastroflex">
+
+            <div class="nome">
+                <p id="nome">Nome</p>
+                <input type="text" formControlName="nome" nome="nome" required placeholder=" Ex. seu nome">
+            </div>
+
+            <div class="email">
+                <p id="email">E-mail</p>
+                <input type="email" formControlName="email" nome="email" required placeholder=" Ex. usuario@email.com">
+            </div>
+
+            <div class="telefone">
+                <p id="telefone">Telefone</p>
+                <input type="text" formControlName="telefone" nome="telefone" required placeholder=" Ex. seu telefone">
+            </div>
         </div>
+        <button type="submit" class="cadastar" (click)="salvarDadosUsuarios()" *ngIf="!verificarEditar">Cadastrar</button>
+        <button type="submit" class="cadastar" (click)="EditarCliente1()" *ngIf="verificarEditar">Editar</button>
 
-        <div class="email">
-            <p id="email">E-mail</p>
-            <input type="text">
-        </div>
-
-        <div class="telefone">
-            <p id="telefone">Telefone</p>
-            <input type="text">
-        </div>
-    </div>
-    <button type="submit" class="cadastar">Cadastrar</button>
+    </form>
 
 
 
-
-    <div class="cadastrados">
+    <div class="cadastrados" *ngFor="let item of usuario; index as i;">
 
         <div class="nome1">
-            <p>Paulo Andre</p>
+            <p>{{item.nome}}</p>
         </div>
 
         <div class="email1">
-            <p>paulo@email.com</p>
+            <p>{{item.email}}</p>
         </div>
 
         <div class="telefone1">
-            <p>3349 6788</p>
+            <p>{{item.telefone}}</p>
         </div>
 
         <div class="botoes">
 
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
+            <button class="editar" (click)="EditarCliente2(item)">Editar</button>
+            <button class="excluir" (click)="deleteDadosUsuarios(item.id)">Excluir</button>
         </div>
     </div>
-
-    <div class="cadastrados2">
-
-        <div class="nome2">
-            <p>Marcos Lucio</p>
-        </div>
-
-        <div class="email2">
-            <p>marcos@email.com</p>
-        </div>
-
-        <div class="telefone2">
-            <p>3349 6788</p>
-        </div>
-
-        <div class="botoes">
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
-        </div>
-    </div>
-
-    <div class="cadastrados3">
-
-        <div class="nome3">
-            <p>Laura Port</p>
-        </div>
-
-        <div class="email3">
-            <p>laura@email.com</p>
-        </div>
-
-        <div class="telefone3">
-            <p>3349 6788</p>
-        </div>
-
-        <div class="botoes">
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </main>
